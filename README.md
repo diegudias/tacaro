@@ -1,6 +1,6 @@
-# tacaro
+# Sistema Tá Caro!
 
-Projeto do curso Flutter Race, sistema Tá Caro
+Projeto do curso Flutter Race
 
 ## Getting Started
 
