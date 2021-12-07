@@ -1,6 +1,6 @@
 # tacaro
 
-A new Flutter project.
+Projeto do curso Flutter Race, sistema Tá Caro
 
 ## Getting Started
 
