@@ -38,7 +38,7 @@ class Button extends StatelessWidget {
                 BorderSide(color: AppTheme.colors.border, width: 1.5)),
             borderRadius: BorderRadius.circular(10));
       case ButtonType.none:
-        return BoxDecoration(
+        return const BoxDecoration(
           color: Colors.transparent,
           //borderRadius: BorderRadius.circular(10)
         );

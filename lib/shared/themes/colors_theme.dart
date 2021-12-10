@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 abstract class IColorsTheme {
   // do figma para o flutter, substirui o # por 0xFF
+  Color get title;
+  Color get subtitle;
   Color get primary;
   Color get buttonDisabled;
   Color get textDisabled;
@@ -12,6 +14,7 @@ abstract class IColorsTheme {
   Color get textColor;
   Color get badColor;
   Color get border;
+  Color get backButton;
 }
 
 class ColorsTheme implements IColorsTheme {
@@ -44,4 +47,12 @@ class ColorsTheme implements IColorsTheme {
 
   @override
   Color get border => const Color(0xFFE9E9EC);
+
+  @override
+  Color get subtitle => const Color(0xFF949B9C);
+  @override
+  Color get title => const Color(0xFF1E1F20);
+
+  @override
+  Color get backButton => const Color(0xFF000000);
 }

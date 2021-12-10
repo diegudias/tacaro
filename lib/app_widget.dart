@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'modules/login/login_page.dart';
+import 'modules/login/pages/create_account_page.dart';
 import 'modules/splash/splash_page.dart';
 
 class AppWidget extends StatelessWidget {
@@ -14,13 +15,13 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      initialRoute: "/splash",
+      initialRoute: "/login/create-account",
       routes: {
         // quando se coloca essa função, só inicializa
         // no momento que for chamada
         "/splash": (context) => const SplashPage(),
         "/login": (context) => const LoginPage(),
-       // "/login/create-account": (context) => CreateAccountPage(),
+        "/login/create-account": (context) => const CreateAccountPage(),
     //    "/home": (context) => HomePage()
       },
     );
