@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tacaro/shared/utils/app_state.dart';
 
 class CreateAccountController extends ChangeNotifier {
   AppState state = AppState.empty();
@@ -32,7 +33,7 @@ class CreateAccountController extends ChangeNotifier {
     if (validate()) {
       try {
         update(AppState.loading());
-        await Future.delayed(Duration(seconds: 3));
+        await Future.delayed(const Duration(seconds: 3));
         update(AppState.success<String>("Deu certo"));
       } catch (e) {
         update(AppState.error("Não foi possível criar conta"));

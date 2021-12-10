@@ -15,7 +15,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      initialRoute: "/login/create-account",
+      initialRoute: "/splash",
       routes: {
         // quando se coloca essa função, só inicializa
         // no momento que for chamada
